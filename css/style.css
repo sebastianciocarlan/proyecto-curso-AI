@@ -16,5 +16,7 @@ body {
     align-items: center;
 }
 .spot{
+    margin: 0;
+    padding: 0;
     border: 10px #f0f0f0a9 solid;
 }
