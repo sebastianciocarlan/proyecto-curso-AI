@@ -1,44 +1,67 @@
 //Tu código va aquí. Recordad que teneis toda la documentacion en https://p5js.org/es/reference/
+var ladrillos = [];
 function setup() {
     //Este codigo se ejecuta 1 vez solamente, al principio
     createCanvas(1280, 720);
     background(220);   
     var x = 0;
     var y = 0;
+  
     for(let j = 0; j<3;j++){
         console.log("Dibujando fila ",j+1)
         for (let index = 0; index < 10; index++) {
             console.log("Dibujando columna", index+1)
             rect(x,y,128,10)
+            ladrillos.push({x:x,y:y,isBroken:false})
             x=x+128;   
         }
         x=0;
         y=y+10;
     }
 
-    console.log("X ES :     ",x)
+    console.log("Los ladrillos son: ",ladrillos)
 
 }
+function redibujarLadrillos(){
+    ladrillos.forEach(ladrillo => {
+        if(!ladrillo.isBroken){
+            rect(ladrillo.x,ladrillo.y,128,10)
+        }
+    });
+}
 var posXPala = 610;
+var posYPala = 700;
+var posXBola = 640;
+var posYBola = 690;
+var vxBola = 2;
+var vyBola = -2;
 function draw() {
     background(220); 
-    ellipse(640, 690, 10, 10)
-    rect(posXPala,700,60,10)
+    redibujarLadrillos();
+
+    ellipse(posXBola, posYBola, 10, 10)
+    if(posXBola<=0 || posXBola >=1280){
+        vxBola = vxBola * -1;
+    }
+    if(posYBola<=0 || posYBola >=720){
+        vyBola=vyBola*-1;
+
+    }
+    if(posYBola == posYPala && (posXBola >=posXPala && posXBola <= posXPala+60)){
+        vyBola = vyBola * -1;
+    }
+    posXBola = posXBola + vxBola;
+    posYBola = posYBola + vyBola;
+    rect(posXPala,posYPala,60,10)
     keydown();
 }
 
 function keydown(){
-    if (keyIsDown(37)) {
+    if (keyIsDown(37) && posXPala > 0) {
         posXPala = posXPala-10;
       }
-      if(keyIsDown(39)){
+      if(keyIsDown(39) && posXPala < (1280-60)){
         posXPala = posXPala +10;
       }
 }
 
-
-if(0 == 0 && !(0== 3)){
-    console.log("HOLA")
-}else{
-    console.log("NO HOLA")
-}
