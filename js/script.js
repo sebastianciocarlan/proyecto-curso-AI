@@ -29,23 +29,38 @@ function redibujarLadrillos(){
         }
     });
 }
+
 var posXPala = 610;
 var posYPala = 700;
 var posXBola = 640;
 var posYBola = 690;
 var vxBola = 2;
 var vyBola = -2;
+function comprobarSiChocaConLadrillos(){
+    ladrillos.forEach(ladrillo =>{
+        if(!ladrillo.isBroken){
+            if((ladrillo.y == posYBola && posXBola>=ladrillo.x) && posXBola <= ladrillo.x + 128 ){
+                ladrillo.isBroken = true;
+                vyBola = vyBola*-1;
+            }
+
+        }
+    })
+}
 function draw() {
     background(220); 
     redibujarLadrillos();
-
+    comprobarSiChocaConLadrillos();
     ellipse(posXBola, posYBola, 10, 10)
     if(posXBola<=0 || posXBola >=1280){
         vxBola = vxBola * -1;
     }
-    if(posYBola<=0 || posYBola >=720){
+    if(posYBola<=0 ){
         vyBola=vyBola*-1;
 
+    }
+    if(posYBola ==720){
+        location.reload()
     }
     if(posYBola == posYPala && (posXBola >=posXPala && posXBola <= posXPala+60)){
         vyBola = vyBola * -1;
