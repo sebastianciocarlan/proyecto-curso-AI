@@ -8,6 +8,11 @@ var posXBola = 640;
 var posYBola = 690;
 var vxBola = 2;
 var vyBola = -2;
+var imagenPala;
+function preload(){
+    imagenPala =  loadImage('../assets/pala.png');
+      
+}
 //Aqui tenemos una funcion que comprueba en cada frame de la funcion draw si la bola ha chocado con alguno de los ladrillos
 function comprobarSiChocaConLadrillos(){
     ladrillos.forEach(ladrillo =>{
@@ -24,8 +29,9 @@ function comprobarSiChocaConLadrillos(){
 function redibujarLadrillos(){
     ladrillos.forEach(ladrillo => {
         if(!ladrillo.isBroken){ //Obviamente solamente redibujamos los ladrillos si no han sido rotos anteriormente
-
+            fill(0,255,100)
             rect(ladrillo.x,ladrillo.y,128,10)
+            noFill()
         }
     });
 }
@@ -61,7 +67,9 @@ function draw() {
     //Aqui llamamos a las funciones de uso de los ladrillos 
     redibujarLadrillos();
     comprobarSiChocaConLadrillos();
+    fill(200,30,10)
     ellipse(posXBola, posYBola, 10, 10)
+    noFill()
     //Aqui comprobamos si la bola choca con los bordes de la pantalla
     if(posXBola<=0 || posXBola >=1280){
         vxBola = vxBola * -1;
@@ -79,7 +87,7 @@ function draw() {
     }
     posXBola = posXBola + vxBola;
     posYBola = posYBola + vyBola;
-    rect(posXPala,posYPala,60,10)
+    image(imagenPala,posXPala,posYPala,60,20)
     keydown();
 }
 //Esta funcion controla si el usuario pulsa las flechas para mover la pala

@@ -1,0 +1,15 @@
+1- Añadir varias vidas al usuario.
+2- Añadir 1 powerup que haga X. 
+    2.1 - Dar mas velocidad a la pala
+    2.2 - Ralentizar la bola
+    2.3 - Agrandar la pala
+    2.4 - Añadir mas bolas
+    2.5 - Explotar cosas
+    2.6 - mover la pala en el eje Y durante X tiempo
+    2.7 - pistolas romper ladrillo
+3- Hacer animaciones mas fluidas a la hora del movimiento de la pelota y de la pala
+4- Implementar aceleracion a la bola y a la pala
+5- Añadir soniditos
+6- Añadir distintos tipos de ladrillos
+7- Añadir trampolines rebotadores
+8- Cambiar todos los rectangulos y formas por imagenes
