@@ -1,0 +1,10 @@
+Enlaces para mejorar javascript: 
+---------------------------------------------------------------------------------------------
+https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics
+https://www.w3schools.com/js/default.asp
+---------------------------------------------------------------------------------------------
+Enlaces para aprender a usar mejor P5.js
+---------------------------------------------------------------------------------------------
+https://p5js.org/es/reference/
+https://p5js.org/es/learn/
+---------------------------------------------------------------------------------------------
