@@ -1,43 +1,14 @@
 //Tu código va aquí. Recordad que teneis toda la documentacion en https://p5js.org/es/reference/
 //Esta variable almacenará todos los ladrillos juntos en un array
 var ladrillos = [];
-//Esta funcion es la que se ejecuta una sola vez, la primera vez que ejecutamos el juego
-function setup() {
-    //Este codigo se ejecuta 1 vez solamente, al principio
-    createCanvas(1280, 720);
-    background(220);   
-    var x = 0;
-    var y = 0;
-  
-    for(let j = 0; j<3;j++){
-        console.log("Dibujando fila ",j+1)
-        for (let index = 0; index < 10; index++) {
-            console.log("Dibujando columna", index+1)
-            rect(x,y,128,10)
-            ladrillos.push({x:x,y:y,isBroken:false})
-            x=x+128;   
-        }
-        x=0;
-        y=y+10;
-    }
-
-    console.log("Los ladrillos son: ",ladrillos)
-
-}
-function redibujarLadrillos(){
-    ladrillos.forEach(ladrillo => {
-        if(!ladrillo.isBroken){
-            rect(ladrillo.x,ladrillo.y,128,10)
-        }
-    });
-}
-
+//Aqui definimos todas las variables que utiliza el programa. 
 var posXPala = 610;
 var posYPala = 700;
 var posXBola = 640;
 var posYBola = 690;
 var vxBola = 2;
 var vyBola = -2;
+//Aqui tenemos una funcion que comprueba en cada frame de la funcion draw si la bola ha chocado con alguno de los ladrillos
 function comprobarSiChocaConLadrillos(){
     ladrillos.forEach(ladrillo =>{
         if(!ladrillo.isBroken){
@@ -49,12 +20,49 @@ function comprobarSiChocaConLadrillos(){
         }
     })
 }
+//Esta funcion redibuja los ladrillos cada frame de la funcion draw
+function redibujarLadrillos(){
+    ladrillos.forEach(ladrillo => {
+        if(!ladrillo.isBroken){ //Obviamente solamente redibujamos los ladrillos si no han sido rotos anteriormente
 
+            rect(ladrillo.x,ladrillo.y,128,10)
+        }
+    });
+}
+
+
+
+
+//Esta funcion es la que se ejecuta una sola vez, la primera vez que ejecutamos el juego
+function setup() {
+    //Definimos la resolucion del canvas
+    createCanvas(1280, 720);
+    //Definimos el color de fondo
+    background(220);   
+    var x = 0;
+    var y = 0;
+   //Este bucle anidado crea el array de ladrillos
+    for(let j = 0; j<3;j++){
+        for (let index = 0; index < 10; index++) {
+            rect(x,y,128,10)
+            ladrillos.push({x:x,y:y,isBroken:false})
+            x=x+128;   
+        }
+        x=0;
+        y=y+10;
+    }
+
+
+}
+
+//Esta es la funcion principal del programa que se ejecuta cada frame
 function draw() {
     background(220); 
+    //Aqui llamamos a las funciones de uso de los ladrillos 
     redibujarLadrillos();
     comprobarSiChocaConLadrillos();
     ellipse(posXBola, posYBola, 10, 10)
+    //Aqui comprobamos si la bola choca con los bordes de la pantalla
     if(posXBola<=0 || posXBola >=1280){
         vxBola = vxBola * -1;
     }
@@ -62,6 +70,7 @@ function draw() {
         vyBola=vyBola*-1;
 
     }
+    //Recargamos la ventana cuando la bola choca con el fondo
     if(posYBola ==720){
         location.reload()
     }
@@ -73,7 +82,7 @@ function draw() {
     rect(posXPala,posYPala,60,10)
     keydown();
 }
-
+//Esta funcion controla si el usuario pulsa las flechas para mover la pala
 function keydown(){
     if (keyIsDown(37) && posXPala > 0) {
         posXPala = posXPala-10;
