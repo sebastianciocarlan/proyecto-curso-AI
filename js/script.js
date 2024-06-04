@@ -1,5 +1,7 @@
 //Tu código va aquí. Recordad que teneis toda la documentacion en https://p5js.org/es/reference/
+//Esta variable almacenará todos los ladrillos juntos en un array
 var ladrillos = [];
+//Esta funcion es la que se ejecuta una sola vez, la primera vez que ejecutamos el juego
 function setup() {
     //Este codigo se ejecuta 1 vez solamente, al principio
     createCanvas(1280, 720);
@@ -47,6 +49,7 @@ function comprobarSiChocaConLadrillos(){
         }
     })
 }
+
 function draw() {
     background(220); 
     redibujarLadrillos();
