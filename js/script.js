@@ -99,4 +99,6 @@ function keydown(){
         posXPala = posXPala +10;
       }
 }
+let vidas = document.getElementById("num-vidas").innerHTML;
+alert(vidas)
 

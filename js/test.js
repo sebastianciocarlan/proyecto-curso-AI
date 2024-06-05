@@ -1,20 +1,23 @@
-function setup(){
-    createCanvas(1280,720,WEBGL)
-    colorMode(RGB)
+
+function esPrimo(x){
     
-
+    for(let i = 2; i<x;i++){
+        if(x%i==0){
+            return false
+        }
+    }
+    return true;
 }
-function draw(){
-    background(244,141,48)
-line(200,200,300,200)
-line(300,200,350,100)
-line(350,100,250,0)
-line(250,0,150,100)
-line(150,100,200,200)
- // Enable orbiting with the mouse.
- orbitControl();
-fill(123,255,12)
- // Draw the box.
- box();
-
+let heAcabado = false;
+let contador = 2;
+let cuantosPrimosLlevo = 0;
+while(!heAcabado){
+    if(esPrimo(contador)){
+        console.log(contador)
+        cuantosPrimosLlevo++;
+    }
+    if(cuantosPrimosLlevo ==100){
+        heAcabado = true;
+    }
+contador++;
 }
