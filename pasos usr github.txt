@@ -1,0 +1,20 @@
+PASOS PARA UTILIZAR GITHUB
+1- HACERSE 1 CUENTA DE GITHUB Y LOGUEARSE
+2- CREAR UN NUEVO REPOSITORIO 
+3- EN NUESTRO ORDENADOR LOCAL CREAMOS UNA CARPETA Y LOS ARCHIVOS INDICADOS
+4- UNA VEZ TENGAMOS LOS ARCHIVOS CREADOS, UTILIZAMOS LOS SIGUIENTES COMANDOS:
+	git init
+	git add .
+	git commit -m "Initial"
+		Aqui seguramente os pedira a algunos loguearos con vuestra cuenta, para ello usamos :
+			git config --global user.email <EL CORREO DE VUESTRA CUENTA DE GITHUB>
+			git config --global user.name <VUESTRO NOMBRE DE USUARIO DE GITHUB>
+	git remote add origin <URL DE VUESTRO REPOSITORIO>
+	git push
+5- CON ESTO PUBLICAREMOS NUESTROS ARCHIVOS 
+
+
+CADA VEZ QUE HAGAMOS UN CAMBIO Y QUERAMOS GUARDARLO ESCRIBIMOS LOS SIGUIENTES COMANDOS
+	git add .
+	git commit -m "Mensaje descriptivo del cambio"
+	git push origin master
