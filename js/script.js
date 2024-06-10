@@ -8,6 +8,9 @@ var posXBola = 640;
 var posYBola = 690;
 var vxBola = 2;
 var vyBola = -2;
+var posXPowerup = 0;
+var posYPowerup = 0;
+var vPowerup = 5;
 var imagenPala;
 function preload(){
     imagenPala =  loadImage('../assets/pala.png');
@@ -20,6 +23,8 @@ function comprobarSiChocaConLadrillos(){
             if((ladrillo.y+10 == posYBola && posXBola>=ladrillo.x) && posXBola <= ladrillo.x + 128 ){
                 ladrillo.isBroken = true;
                 vyBola = vyBola*-1;
+                posXPowerup = ladrillo.x + 64;
+                posYPowerup = 0;
             }
 
         }
@@ -89,6 +94,8 @@ function draw() {
     posYBola = posYBola + vyBola;
     image(imagenPala,posXPala,posYPala,60,20)
     keydown();
+    rect(posXPowerup,posYPowerup,20,20)
+    posYPowerup = posYPowerup + vPowerup;
 }
 //Esta funcion controla si el usuario pulsa las flechas para mover la pala
 function keydown(){
