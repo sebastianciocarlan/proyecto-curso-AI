@@ -15,6 +15,27 @@ class Ladrillo {
     }
 
 }
+class Powerup{
+    constructor(x, y){
+        this.x = x;
+        this.y = y;
+    }
+    w = 10;
+    h =10;
+    vy= 4 ;
+    dibujar(){
+        rect(this.x, this.y, this.w, this.h)
+    }
+    moverse(){
+        this.y+=this.vy;
+    }
+    comprobarSiChocaConPala(pala){
+        if (this.y == pala.y && (this.x >= pala.x && this.x <= pala.x + 60)) {
+
+            console.log("powerup")
+        }
+    }
+}
 class Pala {
     constructor(x, y) {
         this.x = x;
@@ -69,15 +90,18 @@ class Bola {
             location.reload()
         }
     }
-    comprobarSiChocaConLadrillo(ladrillo) {
+    comprobarSiChocaConLadrillo(ladrillo,arrayPowerups) {
         if (this.y == ladrillo.y && (this.x >= ladrillo.x && this.x <= ladrillo.x + 128)) {
             ladrillo.romper();
+            if(Math.random() > 0.5){
+            arrayPowerups.push(new Powerup(ladrillo.x+ladrillo.w/2, ladrillo.y));
+            }
             this.vy = this.vy * -1;
         }        
     }
 
 }
-
+var arrayPowerup = []
 var ladrillos = [];
 var pala = new Pala(610, 700);
 var bola = new Bola(640, 690);
@@ -107,8 +131,13 @@ function draw() {
     ladrillos.forEach(ladrillo => {
         if(!ladrillo.isBroken){
             ladrillo.dibujar();
-            bola.comprobarSiChocaConLadrillo(ladrillo);
+            bola.comprobarSiChocaConLadrillo(ladrillo,arrayPowerup);
         }
+    });
+    arrayPowerup.forEach(powerup => {
+        powerup.dibujar();
+        powerup.moverse();
+        powerup.comprobarSiChocaConPala(pala);
     });
     pala.dibujar();
     bola.dibujar();
