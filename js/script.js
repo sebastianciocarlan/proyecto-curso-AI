@@ -17,7 +17,7 @@ function preload(){
 function comprobarSiChocaConLadrillos(){
     ladrillos.forEach(ladrillo =>{
         if(!ladrillo.isBroken){
-            if((ladrillo.y == posYBola && posXBola>=ladrillo.x) && posXBola <= ladrillo.x + 128 ){
+            if((ladrillo.y+10 == posYBola && posXBola>=ladrillo.x) && posXBola <= ladrillo.x + 128 ){
                 ladrillo.isBroken = true;
                 vyBola = vyBola*-1;
             }
@@ -49,7 +49,7 @@ function setup() {
     var y = 0;
    //Este bucle anidado crea el array de ladrillos
     for(let j = 0; j<3;j++){
-        for (let index = 0; index < 10; index++) {
+        for (let index = 0; index < 9; index++) {
             rect(x,y,128,10)
             ladrillos.push({x:x,y:y,isBroken:false})
             x=x+128;   
@@ -99,6 +99,3 @@ function keydown(){
         posXPala = posXPala +10;
       }
 }
-let vidas = document.getElementById("num-vidas").innerHTML;
-alert(vidas)
-
