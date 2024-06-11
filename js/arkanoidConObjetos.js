@@ -40,6 +40,7 @@ class Pala {
     constructor(x, y) {
         this.x = x;
         this.y = y;
+
     }
     w = 60;
     h = 10;
@@ -56,16 +57,27 @@ class Pala {
     }
 }
 class Bola {
-    constructor(x, y) {
+    constructor(x, y,type) {
         this.x = x;
         this.y = y;
+        this.type = type;
     }
     w = 10;
     h = 10;
     vx = 2;
     vy = -2;
     dibujar() {
-        ellipse(this.x, this.y, this.w, this.h)
+        if(this.type == 0){
+            fill(0,255,0)
+            ellipse(this.x, this.y, this.w, this.h)
+            noFill()
+        }
+        if(this.type == 1){
+            fill(255,0,0)
+            ellipse(this.x, this.y, this.w, this.h)
+            noFill()
+        }
+
     }
     moverse() {
         this.x += this.vx;
@@ -81,7 +93,7 @@ class Bola {
             }
         }
     }
-    comprobarSiChocaConParedes() {
+    comprobarSiChocaConParedes(arrayBolaNuevas) {
         //Aqui comprobamos si la bola choca con los bordes de la pantalla
         if (this.x <= 0 || this.x >= 1280) {
             this.vx = this.vx * -1;
@@ -91,8 +103,8 @@ class Bola {
 
         }
         //Recargamos la ventana cuando la bola choca con el fondo
-        if (this.y == 720) {
-            location.reload()
+        if (this.y >= 720) {
+            if(this.type == 1){location.reload()}
         }
     }
     comprobarSiChocaConLadrillo(ladrillo,arrayPowerups) {
@@ -109,7 +121,7 @@ class Bola {
 var arrayPowerup = []
 var ladrillos = [];
 var pala = new Pala(610, 700);
-var bola = new Bola(640, 690);
+var bola = new Bola(640, 690,1);
 
 function preload() {
 
@@ -147,7 +159,7 @@ function draw() {
         powerup.dibujar();
         powerup.moverse();
         if(powerup.comprobarSiChocaConPala(pala)){
-            nuevasBolas.push(new Bola(bola.x, bola.y));
+            nuevasBolas.push(new Bola(bola.x, bola.y,0));
         }
 
     });

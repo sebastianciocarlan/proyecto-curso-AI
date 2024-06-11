@@ -23,8 +23,10 @@ function comprobarSiChocaConLadrillos(){
             if((ladrillo.y+10 == posYBola && posXBola>=ladrillo.x) && posXBola <= ladrillo.x + 128 ){
                 ladrillo.isBroken = true;
                 vyBola = vyBola*-1;
+                if(Math.random() > 0.5){
                 posXPowerup = ladrillo.x + 64;
                 posYPowerup = 0;
+                }
             }
 
         }
