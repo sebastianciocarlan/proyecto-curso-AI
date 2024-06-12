@@ -3,11 +3,9 @@ body {
     padding: 0;
     margin: 0;
 }
-.control-vidas{
-    font-size: 20px;
-}
 
-.frame {
+
+.centrado {
     background:  linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     background-position: center ;
     background-repeat: no-repeat;
@@ -18,8 +16,13 @@ body {
     justify-content: center;
     align-items: center;
 }
-.spot{
-    margin: 0;
-    padding: 0;
-    border: 10px #f0f0f0a9 solid;
+.puntuaciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
 }

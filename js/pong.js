@@ -61,12 +61,13 @@ class Bola {
             this.vx = this.vx * -1;
         }
         if (this.y <= 0) {
-           
-            location.reload()
+            document.getElementById("puntuacionJ1").innerHTML = Number.parseInt( document.getElementById("puntuacionJ1").innerHTML) + 1;
+            this.x = 640;
+            this.y = 690;
         }
         //Recargamos la ventana cuando la bola choca con el fondo
         if (this.y >= 720) {
-          location.reload()
+          
         }
     }
 
