@@ -19,12 +19,22 @@ class Powerup{
     constructor(x, y){
         this.x = x;
         this.y = y;
+        if(Math.random() > 0.5){
+            this.type = 0;
+        }else{
+            this.type = 1;
+        }
     }
     w = 10;
     h =10;
     vy= 4 ;
     dibujar(){
-        rect(this.x, this.y, this.w, this.h)
+        if(this.type == 0){
+            rect(this.x, this.y, this.w, this.h)  
+        }else{
+            ellipse(this.x, this.y, this.w, this.h)
+        }
+
     }
     moverse(){
         this.y+=this.vy;
@@ -84,7 +94,7 @@ class Bola {
         this.y += this.vy;
     }
     comprobarSiChocaConPala(pala) {
-        if (this.y == pala.y && (this.x >= pala.x && this.x <= pala.x + 60)) {
+        if (this.y == pala.y && (this.x >= pala.x -5 && this.x <= pala.x + 65)) {
             this.vy = this.vy * -1;
             if(Math.random() > 0.5){
             this.vx = this.vx * Math.random() * 2 + 1;
@@ -108,9 +118,10 @@ class Bola {
         }
     }
     comprobarSiChocaConLadrillo(ladrillo,arrayPowerups) {
-        if (this.y == ladrillo.y && (this.x >= ladrillo.x && this.x <= ladrillo.x + 128)) {
+        
+        if (this.y == ladrillo.y && (this.x >= ladrillo.x && this.x <= ladrillo.x + 128) && !ladrillo.isBroken) {
             ladrillo.romper();
-            if(Math.random() > 0.5){
+            if(Math.random() > 0.1){
             arrayPowerups.push(new Powerup(ladrillo.x+ladrillo.w/2, ladrillo.y));
             }
             this.vy = this.vy * -1;
@@ -155,14 +166,6 @@ function draw() {
         
         }
     });
-    arrayPowerup.forEach(powerup => {
-        powerup.dibujar();
-        powerup.moverse();
-        if(powerup.comprobarSiChocaConPala(pala)){
-            nuevasBolas.push(new Bola(bola.x, bola.y,0));
-        }
-
-    });
     nuevasBolas.forEach(indiceBolas => {
         indiceBolas.dibujar();
         indiceBolas.moverse();
@@ -174,6 +177,14 @@ function draw() {
 
     });
 
+    arrayPowerup.forEach(powerup => {
+        powerup.dibujar();
+        powerup.moverse();
+        if(powerup.comprobarSiChocaConPala(pala)){
+            nuevasBolas.push(new Bola(bola.x, bola.y,0));
+        }
+
+    });
     pala.dibujar();
     bola.dibujar();
     bola.moverse();
