@@ -1,0 +1,85 @@
+Temario:
+
+Introducción a la Inteligencia Artificial
+
+¿Qué es la IA?
+Historia y evolución de la IA
+Tipos de Inteligencia Artificial
+
+IA Débil (Narrow AI)
+IA Fuerte (General AI)
+IA Superinteligente (Superintelligent AI)
+Modelos de Aprendizaje en IA
+
+Aprendizaje Supervisado
+Aprendizaje No Supervisado
+Aprendizaje por Refuerzo
+1. Introducción a la Inteligencia Artificial
+¿Qué es la IA?
+
+La inteligencia artificial es un campo de la informática que se centra en la creación de sistemas capaces de realizar tareas que, cuando son realizadas por seres humanos, requieren inteligencia. Estas tareas incluyen cosas como el reconocimiento de voz, la toma de decisiones, la traducción de idiomas, y más.
+
+Historia y Evolución de la IA
+
+Década de 1950: Comienzo del estudio formal de la IA. Alan Turing introduce el Test de Turing.
+Décadas de 1960-70: Primeros programas de IA (como ELIZA y SHRDLU) y el desarrollo de lenguajes de programación específicos para IA.
+Década de 1980: Auge de las redes neuronales y los sistemas expertos.
+Década de 2000 en adelante: Avances significativos en el aprendizaje profundo (deep learning) y el aprendizaje automático (machine learning), impulsados por el aumento de la potencia de cálculo y la disponibilidad de grandes cantidades de datos.
+2. Tipos de Inteligencia Artificial
+IA Débil (Narrow AI)
+
+Definición: Sistemas diseñados y entrenados para realizar una tarea específica.
+Ejemplos: Siri, Alexa, sistemas de recomendación en Netflix y Amazon.
+IA Fuerte (General AI)
+
+Definición: Sistemas con una inteligencia similar a la humana, capaces de realizar cualquier tarea cognitiva que un humano puede hacer.
+Estado Actual: Todavía en fase de investigación. No existen sistemas de IA fuerte hoy en día.
+IA Superinteligente (Superintelligent AI)
+
+Definición: Sistemas que superan la inteligencia humana en todos los aspectos, incluyendo creatividad, toma de decisiones y sabiduría.
+Futuro: Es un concepto teórico que aún no se ha logrado y que plantea importantes cuestiones éticas y de seguridad.
+3. Modelos de Aprendizaje en IA
+Aprendizaje Supervisado
+
+Descripción: El modelo se entrena utilizando un conjunto de datos etiquetados. Se le proporciona al modelo ejemplos de entrada junto con las salidas deseadas.
+Ejemplo: Clasificación de correos electrónicos como "spam" o "no spam".
+Aprendizaje No Supervisado
+
+Descripción: El modelo se entrena con datos no etiquetados y debe encontrar patrones y estructuras ocultas en los datos.
+Ejemplo: Agrupamiento de clientes en un sistema de marketing (clustering).
+Aprendizaje por Refuerzo
+
+Descripción: El modelo aprende interactuando con un entorno. Realiza acciones y recibe recompensas o castigos, ajustando sus acciones futuras para maximizar la recompensa acumulada.
+Ejemplo: Un agente de IA jugando a videojuegos y mejorando su desempeño a través de la retroalimentación continua.
+Conclusión
+La inteligencia artificial es un campo vasto y en constante evolución que está transformando diversos sectores de la sociedad. Comprender los diferentes tipos de IA y los modelos de aprendizaje es fundamental para apreciar su potencial y sus implicaciones futuras.
+
+
+
+Introducción al Aprendizaje por Refuerzo
+
+¿Qué es el aprendizaje por refuerzo?
+Componentes principales del aprendizaje por refuerzo
+Conceptos Básicos de TensorFlow.js
+
+¿Qué es TensorFlow.js?
+Instalación y configuración
+Implementación del Aprendizaje por Refuerzo en TensorFlow.js
+
+Configuración del entorno de juego (Arkanoid)
+Definición del agente de aprendizaje por refuerzo
+Entrenamiento del agente
+Evaluación y ajuste del modelo
+1. Introducción al Aprendizaje por Refuerzo
+¿Qué es el Aprendizaje por Refuerzo?
+
+El aprendizaje por refuerzo es una técnica de aprendizaje automático donde un agente aprende a tomar decisiones en un entorno para
+maximizar una recompensa acumulada. A través de prueba y error, el agente descubre qué acciones producen la mayor recompensa.
+
+Componentes Principales del Aprendizaje por Refuerzo
+
+Agente: La entidad que toma decisiones.
+Entorno: El mundo con el que interactúa el agente (en este caso, el juego Arkanoid).
+Acciones: Las posibles decisiones que puede tomar el agente.
+Recompensas: La retroalimentación que recibe el agente en función de sus acciones.
+Política: La estrategia que usa el agente para decidir qué acciones tomar.
