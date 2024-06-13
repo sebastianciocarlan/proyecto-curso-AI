@@ -49,13 +49,13 @@ class Bola {
         if ((this.y >= pala.y && this.y <= (pala.y + pala.h)) && (this.x >= pala.x -5 && this.x <= pala.x + 65)) {
             this.vy = this.vy * -1;
             if(Math.random() > 0.5){
-            this.vx = this.vx * Math.random() * 2 + 1;
+            this.vx = this.vx * Math.random() * 2 + 2;
             }else{
-                this.vx = this.vx * Math.random() * 2 - 1;
+                this.vx = this.vx * Math.random() * 2 - 2;
             }
         }
     }
-    comprobarSiChocaConParedes(arrayBolaNuevas) {
+    comprobarSiChocaConParedes() {
         //Aqui comprobamos si la bola choca con los bordes de la pantalla
         if (this.x <= 0 || this.x >= 1280) {
             this.vx = this.vx * -1;
@@ -64,10 +64,16 @@ class Bola {
             document.getElementById("puntuacionJ1").innerHTML = Number.parseInt( document.getElementById("puntuacionJ1").innerHTML) + 1;
             this.x = 640;
             this.y = 690;
+            this.vx = 2;
+            this.vy = -2;
         }
         //Recargamos la ventana cuando la bola choca con el fondo
         if (this.y >= 720) {
-          
+            document.getElementById("puntuacionJ2").innerHTML = Number.parseInt( document.getElementById("puntuacionJ2").innerHTML) + 1;
+            this.x = 640;
+            this.y = 20;
+            this.vx = 2;
+            this.vy = 2;
         }
     }
 
