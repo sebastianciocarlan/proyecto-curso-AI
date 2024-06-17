@@ -1,0 +1,669 @@
+Preguntas sobre JavaScript
+
+    ¿Cuál de los siguientes es un tipo de dato en JavaScript?
+        A) String
+        B) Integer
+        C) Character
+        D) Byte
+
+    ¿Cuál es el resultado de 2 + 2 en JavaScript?
+        A) 22
+        B) 4
+        C) "4"
+        D) "22"
+
+    ¿Cómo se escribe un comentario de una sola línea en JavaScript?
+        A) <!-- Comentario -->
+        B) // Comentario
+        C) /* Comentario */
+        D) # Comentario
+
+    ¿Qué método se usa para escribir en la consola del navegador?
+        A) console.write()
+        B) console.print()
+        C) console.log()
+        D) console.show()
+
+    ¿Qué palabra clave se usa para declarar una variable en JavaScript?
+        A) var
+        B) int
+        C) float
+        D) string
+
+    ¿Cuál es el operador de igualdad estricta en JavaScript?
+        A) ==
+        B) =
+        C) !=
+        D) ===
+
+    ¿Cómo se define una función en JavaScript?
+        A) function miFuncion() {}
+        B) def miFuncion() {}
+        C) func miFuncion() {}
+        D) lambda miFuncion() {}
+
+    ¿Cómo se llama a una función llamada miFuncion?
+        A) call miFuncion();
+        B) miFuncion();
+        C) call function miFuncion();
+        D) execute miFuncion();
+
+    ¿Cómo se crea un arreglo en JavaScript?
+        A) var arr = (1, 2, 3);
+        B) var arr = [1, 2, 3];
+        C) var arr = {1, 2, 3};
+        D) var arr = <1, 2, 3>;
+
+    ¿Cómo accedes al tercer elemento de un arreglo llamado miArreglo?
+        A) miArreglo(3);
+        B) miArreglo[3];
+        C) miArreglo[2];
+        D) miArreglo{3};
+
+    ¿Qué método se usa para añadir un elemento al final de un arreglo?
+        A) push()
+        B) add()
+        C) append()
+        D) insert()
+
+    ¿Qué operador se usa para concatenar dos cadenas en JavaScript?
+        A) +
+        B) &
+        C) %
+        D) $
+
+    ¿Cómo se obtiene la longitud de una cadena llamada miCadena?
+        A) miCadena.length()
+        B) miCadena.len
+        C) miCadena.size
+        D) miCadena.length
+
+    ¿Cuál de las siguientes es una estructura de control de flujo en JavaScript?
+        A) if
+        B) for
+        C) while
+        D) Todas las anteriores
+
+    ¿Qué palabra clave se usa para salir de un bucle?
+        A) exit
+        B) break
+        C) continue
+        D) stop
+
+    ¿Qué valor devuelve una función si no tiene una declaración de retorno (return)?
+        A) undefined
+        B) null
+        C) 0
+        D) false
+
+    ¿Cuál es el resultado de typeof null en JavaScript?
+        A) "null"
+        B) "object"
+        C) "undefined"
+        D) "boolean"
+
+    ¿Cómo se convierte una cadena str a un número entero en JavaScript?
+        A) int(str)
+        B) Number(str)
+        C) parseInt(str)
+        D) parseNumber(str)
+
+    ¿Cuál es el resultado de true && false?
+        A) true
+        B) false
+        C) "truefalse"
+        D) "false"
+
+    ¿Qué operador se usa para comprobar si dos valores no son iguales en JavaScript?
+        A) !=
+        B) !==
+        C) <>
+        D) not equal
+
+    ¿Cuál de los siguientes métodos es usado para remover el último elemento de un arreglo?
+        A) remove()
+        B) pop()
+        C) delete()
+        D) splice()
+
+    ¿Qué palabra clave se usa para definir una constante en JavaScript?
+        A) var
+        B) let
+        C) const
+        D) static
+
+    ¿Cuál es la sintaxis correcta para crear un objeto en JavaScript?
+        A) var obj = {};
+        B) var obj = [];
+        C) var obj = ();
+        D) var obj = <>;
+
+    ¿Cómo accedes a una propiedad llamada nombre de un objeto persona?
+        A) persona[nombre]
+        B) persona->nombre
+        C) persona.nombre
+        D) persona
+
+    ¿Qué método se usa para redondear un número al entero más cercano en JavaScript?
+        A) Math.ceil()
+        B) Math.floor()
+        C) Math.round()
+        D) Math.abs()
+
+    ¿Qué método convierte un número en una cadena en JavaScript?
+        A) toString()
+        B) toText()
+        C) parseString()
+        D) stringify()
+
+    ¿Qué método se usa para unir todos los elementos de un arreglo en una cadena?
+        A) join()
+        B) concat()
+        C) union()
+        D) combine()
+
+    ¿Cuál de los siguientes no es un tipo de bucle en JavaScript?
+        A) for
+        B) while
+        C) repeat
+        D) do-while
+
+    ¿Cuál es el valor de 2 ** 3 en JavaScript?
+        A) 5
+        B) 6
+        C) 8
+        D) 9
+
+    ¿Qué evento se usa para detectar cuando un usuario hace clic en un elemento en JavaScript?
+        A) onClick
+        B) onTap
+        C) onPress
+        D) onTouch
+
+    ¿Cuál de las siguientes no es una palabra clave en JavaScript?
+        A) new
+        B) delete
+        C) this
+        D) create
+
+    ¿Cuál es el valor de undefined == null en JavaScript?
+        A) true
+        B) false
+        C) null
+        D) undefined
+
+    ¿Cuál es el propósito del método Array.prototype.slice?
+        A) Cortar un arreglo y modificar el arreglo original
+        B) Cortar un arreglo y devolver una copia
+        C) Cortar un arreglo y eliminar los elementos cortados
+        D) Cortar un arreglo y reemplazar los elementos cortados
+
+    ¿Qué devuelve el método Array.prototype.indexOf?
+        A) El índice del primer elemento que coincide con el valor especificado
+        B) El índice del último elemento que coincide con el valor especificado
+        C) Una lista de todos los índices que coinciden con el valor especificado
+        D) El valor del primer elemento en el arreglo
+
+    ¿Cómo se puede detener la propagación de un evento en JavaScript?
+        A) event.stopPropagation()
+        B) event.preventDefault()
+        C) event.stop()
+        D) event.halt()
+
+    ¿Qué método se usa para convertir una cadena a minúsculas?
+        A) toLower()
+        B) toLowerCase()
+        C) toSmallCase()
+        D) toMinCase()
+
+    ¿Cuál de los siguientes métodos no modifica el arreglo original?
+        A) reverse()
+        B) sort()
+        C) filter()
+        D) splice()
+
+    ¿Cuál es el valor de typeof NaN en JavaScript?
+        A) "number"
+        B) "NaN"
+        C) "undefined"
+        D) "object"
+
+    ¿Qué operador se usa para comparar si dos valores son idénticos en tipo y valor?
+        A) ==
+        B) =
+        C) ===
+        D) !=
+
+    ¿Cuál de las siguientes estructuras no es un tipo de bucle?
+        A) for
+        B) while
+        C) foreach
+        D) until
+
+Preguntas sobre p5.js
+
+    ¿Qué función se usa para crear un lienzo en p5.js?
+        A) createCanvas()
+        B) newCanvas()
+        C) makeCanvas()
+        D) initCanvas()
+
+    ¿Qué función se usa para establecer el color de fondo en p5.js?
+        A) background()
+        B) setBackground()
+        C) fillBackground()
+        D) colorBackground()
+
+    ¿Qué función se usa para dibujar un círculo en p5.js?
+        A) circle()
+        B) ellipse()
+        C) arc()
+        D) round()
+
+    ¿Cuál es el primer argumento de la función line() en p5.js?
+        A) x1
+        B) y1
+        C) x2
+        D) y2
+
+    ¿Qué función se llama continuamente en un bucle en p5.js?
+        A) draw()
+        B) loop()
+        C) run()
+        D) repeat()
+
+    ¿Qué función se usa para detener el bucle de dibujo en p5.js?
+        A) noLoop()
+        B) stopLoop()
+        C) haltLoop()
+        D) endLoop()
+
+    ¿Qué función se usa para establecer el color de relleno de las formas en p5.js?
+        A) fill()
+        B) color()
+        C) paint()
+        D) setColor()
+
+    ¿Qué función se usa para establecer el color del contorno de las formas en p5.js?
+        A) stroke()
+        B) outline()
+        C) border()
+        D) lineColor()
+
+    ¿Cómo se define una variable global en p5.js?
+        A) Dentro de setup()
+        B) Dentro de draw()
+        C) Fuera de setup() y draw()
+        D) Dentro de init()
+
+    ¿Qué función se usa para dibujar un rectángulo en p5.js?
+        A) rect()
+        B) rectangle()
+        C) box()
+        D) square()
+
+    ¿Cuál es el primer argumento de la función rect() en p5.js?
+        A) Ancho
+        B) Alto
+        C) Coordenada x
+        D) Coordenada y
+
+    ¿Qué función se usa para cambiar el tamaño del lienzo en p5.js?
+        A) resizeCanvas()
+        B) scaleCanvas()
+        C) setCanvasSize()
+        D) adjustCanvas()
+
+    ¿Qué método se usa para comprobar si una tecla está siendo presionada en p5.js?
+        A) keyIsDown()
+        B) isKeyPressed()
+        C) checkKey()
+        D) keyPressed()
+
+    ¿Qué propiedad se usa para obtener la posición del ratón en el eje X?
+        A) mouseX
+        B) mousePosX
+        C) mousePositionX
+        D) mouseCoordX
+
+    ¿Qué propiedad se usa para obtener la posición del ratón en el eje Y?
+        A) mouseY
+        B) mousePosY
+        C) mousePositionY
+        D) mouseCoordY
+
+    ¿Qué función se usa para dibujar un punto en p5.js?
+        A) point()
+        B) dot()
+        C) spot()
+        D) pixel()
+
+    ¿Qué propiedad se usa para obtener el ancho del lienzo en p5.js?
+        A) width
+        B) canvasWidth
+        C) canvasSizeX
+        D) w
+
+    ¿Qué propiedad se usa para obtener el alto del lienzo en p5.js?
+        A) height
+        B) canvasHeight
+        C) canvasSizeY
+        D) h
+
+    ¿Qué función se usa para limpiar el lienzo en p5.js?
+        A) clear()
+        B) erase()
+        C) clean()
+        D) wipe()
+
+    ¿Qué propiedad se usa para cambiar el grosor del contorno en p5.js?
+        A) strokeWeight()
+        B) borderWidth()
+        C) outlineThickness()
+        D) lineWidth()
+
+    ¿Qué propiedad se usa para verificar si una tecla específica está siendo presionada en p5.js?
+        A) key
+        B) keyPressed
+        C) keyIsDown
+        D) isKey
+
+    ¿Qué función se usa para cambiar el modo de ángulo en p5.js a grados?
+        A) angleMode(DEGREES)
+        B) setAngleMode(DEGREES)
+        C) changeAngleMode(DEGREES)
+        D) switchAngleMode(DEGREES)
+
+    ¿Qué función se usa para guardar una imagen del lienzo en p5.js?
+        A) saveCanvas()
+        B) saveImage()
+        C) exportCanvas()
+        D) exportImage()
+
+    ¿Qué función se usa para rotar un objeto en p5.js?
+        A) rotate()
+        B) spin()
+        C) turn()
+        D) angle()
+
+    ¿Qué función se usa para dibujar un triángulo en p5.js?
+        A) triangle()
+        B) tri()
+        C) polygon()
+        D) shape()
+
+    ¿Qué función se usa para dibujar un arco en p5.js?
+        A) arc()
+        B) curve()
+        C) circleArc()
+        D) angleArc()
+
+    ¿Qué método se usa para reproducir un sonido en p5.js?
+        A) play()
+        B) sound()
+        C) audio()
+        D) playSound()
+
+    ¿Cuál de los siguientes es un tipo de bucle en JavaScript?
+        A) forEach
+        B) do-while
+        C) both A and B
+        D) neither A nor B
+
+    ¿Cuál es el valor de typeof undefined en JavaScript?
+        A) "null"
+        B) "undefined"
+        C) "object"
+        D) "boolean"
+
+    ¿Qué método se usa para combinar dos o más arreglos en uno nuevo?
+        A) concat()
+        B) join()
+        C) push()
+        D) merge()
+
+    ¿Cuál es el propósito del método Array.prototype.reduce?
+        A) Reducir el tamaño del arreglo
+        B) Aplicar una función a cada elemento del arreglo y acumular un único resultado
+        C) Filtrar elementos del arreglo
+        D) Ordenar los elementos del arreglo
+
+    ¿Cuál es el valor de true || false?
+        A) true
+        B) false
+        C) "truefalse"
+        D) "false"
+
+    ¿Cómo se define un objeto en JavaScript?
+        A) var obj = {};
+        B) var obj = [];
+        C) var obj = ();
+        D) var obj = <>;
+
+    ¿Qué método se usa para remover un elemento específico de un arreglo en JavaScript?
+        A) remove()
+        B) splice()
+        C) delete()
+        D) pop()
+
+    ¿Qué método se usa para convertir una cadena a mayúsculas en JavaScript?
+        A) toUpperCase()
+        B) toCaps()
+        C) toBigLetters()
+        D) toUpper()
+
+    ¿Cómo se determina el tamaño de un arreglo en JavaScript?
+        A) array.length
+        B) array.size()
+        C) array.count
+        D) array.total()
+
+    ¿Qué palabra clave se usa para declarar una variable que puede cambiar de valor?
+        A) const
+        B) var
+        C) static
+        D) immutable
+
+    ¿Cuál de las siguientes opciones es una estructura de control condicional en JavaScript?
+        A) if
+        B) switch
+        C) else
+        D) Todas las anteriores
+
+    ¿Qué método se usa para agregar uno o más elementos al principio de un arreglo?
+        A) push()
+        B) unshift()
+        C) shift()
+        D) pop()
+
+    ¿Cuál de los siguientes no es un operador lógico en JavaScript?
+        A) &&
+        B) ||
+        C) !
+        D) <>
+
+    ¿Qué método se usa para invertir el orden de los elementos en un arreglo?
+        A) invert()
+        B) reverse()
+        C) flip()
+        D) mirror()
+
+    ¿Cuál es el propósito del método Array.prototype.map?
+        A) Modificar el arreglo original
+        B) Crear un nuevo arreglo con los resultados de aplicar una función a cada elemento
+        C) Filtrar elementos del arreglo
+        D) Ordenar los elementos del arreglo
+
+    ¿Qué palabra clave se usa para declarar una variable de bloque en JavaScript?
+        A) var
+        B) const
+        C) let
+        D) block
+
+    ¿Cómo se elimina el primer elemento de un arreglo en JavaScript?
+        A) pop()
+        B) remove()
+        C) shift()
+        D) delete()
+
+    ¿Cuál es el valor de null === undefined en JavaScript?
+        A) true
+        B) false
+        C) null
+        D) undefined
+
+    ¿Qué método se usa para dividir una cadena en un arreglo de subcadenas?
+        A) slice()
+        B) split()
+        C) divide()
+        D) break()
+
+    ¿Qué palabra clave se usa para definir una función anónima en JavaScript?
+        A) function
+        B) anonymous
+        C) func
+        D) lambda
+
+    ¿Cuál es el valor de typeof NaN en JavaScript?
+        A) "number"
+        B) "NaN"
+        C) "undefined"
+        D) "object"
+
+    ¿Qué operador se usa para incrementar una variable en 1 en JavaScript?
+        A) ++
+        B) +=
+        C) +
+        D) ^
+
+    ¿Cuál es el valor de 2 * "2" en JavaScript?
+        A) 4
+        B) 22
+        C) "4"
+        D) "22"
+
+    ¿Cómo se crea una función flecha en JavaScript?
+        A) let func = () => {}
+        B) let func = -> {}
+        C) let func = {} =>
+        D) let func = -> {}
+
+    ¿Qué método se usa para agregar un nuevo par clave-valor a un objeto en JavaScript?
+        A) add()
+        B) set()
+        C) append()
+        D) Object.assign()
+
+    ¿Cuál es el propósito del método Array.prototype.filter?
+        A) Modificar el arreglo original
+        B) Crear un nuevo arreglo con todos los elementos que pasen una prueba
+        C) Ordenar los elementos del arreglo
+        D) Reducir el tamaño del arreglo
+
+    ¿Cómo se elimina una propiedad de un objeto en JavaScript?
+        A) remove
+        B) delete
+        C) unset
+        D) discard
+
+    ¿Qué palabra clave se usa para declarar una función en JavaScript?
+        A) function
+        B) func
+        C) def
+        D) declare
+
+    ¿Qué método se usa para detener la ejecución de una función y devolver un valor?
+        A) return
+        B) stop
+        C) break
+        D) end
+
+    ¿Cuál de los siguientes no es un tipo de dato en JavaScript?
+        A) Number
+        B) String
+        C) Float
+        D) Boolean
+
+    ¿Cómo se accede a un elemento de un arreglo en JavaScript?
+        A) array(index)
+        B) array[index]
+        C) array.index
+        D) array{index}
+
+    ¿Qué operador se usa para comprobar si dos valores no son idénticos en JavaScript?
+        A) !==
+        B) !=
+        C) <>
+        D) not equal
+
+    ¿Cómo se define una función llamada miFuncion que no toma parámetros?
+        A) function miFuncion() {}
+        B) function miFuncion(void) {}
+        C) function miFuncion(empty) {}
+        D) function miFuncion() {return}
+
+    ¿Qué palabra clave se usa para manejar excepciones en JavaScript?
+        A) catch
+        B) handle
+        C) try
+        D) except
+
+    ¿Cuál es el valor de 2 / 0 en JavaScript?
+        A) Infinity
+        B) NaN
+        C) undefined
+        D) null
+
+    ¿Cómo se puede crear una variable global dentro de una función en JavaScript?
+        A) Usando la palabra clave global
+        B) Usando la palabra clave var fuera de la función
+        C) Asignando una variable sin usar var, let o const
+        D) No se puede
+
+    ¿Qué método se usa para determinar si un arreglo incluye un cierto valor?
+        A) has()
+        B) includes()
+        C) contains()
+        D) exists()
+
+    ¿Cuál de los siguientes es un bucle en JavaScript?
+        A) for
+        B) foreach
+        C) until
+        D) loop
+
+    ¿Qué palabra clave se usa para definir una clase en JavaScript?
+        A) class
+        B) define
+        C) struct
+        D) object
+
+    ¿Cómo se accede a la longitud de un arreglo llamado miArreglo?
+        A) miArreglo.length
+        B) miArreglo.size
+        C) miArreglo.count
+        D) miArreglo.total
+
+    ¿Qué operador se usa para el operador lógico "Y" en JavaScript?
+        A) &&
+        B) ||
+        C) &
+        D) and
+
+    ¿Qué palabra clave se usa para importar un módulo en JavaScript?
+        A) import
+        B) include
+        C) require
+        D) fetch
+
+    ¿Cuál es el valor de typeof function() {} en JavaScript?
+        A) "object"
+        B) "function"
+        C) "undefined"
+        D) "boolean"
+
+    ¿Cuál es el resultado de "5" + 5 en JavaScript?
+        A) 10
+        B) "10"
+        C) 55
+        D) "55"
