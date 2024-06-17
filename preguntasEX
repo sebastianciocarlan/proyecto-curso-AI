@@ -667,3 +667,38 @@ Preguntas sobre p5.js
         B) "10"
         C) 55
         D) "55"
+
+¿Cuál de estas inteligencias artificiales está limitada a realizar solo una acción? 
+        A) Narrow AI 
+        B) Strong AI 
+        C) Super AI 
+        D)Machine Learning 
+
+¿Cómo se llaman las layers de una red neural que no están ni al principio, ni al final?  
+        A )Occult Layers 
+        B) Output Layers 
+        C )Hidden Layers 
+        D) Input Layers 
+
+¿En un perceptrón, que valores son los que definen la importancia de cada uno de los inputs? 
+        A)Altura 
+        B)Peso 
+        C)Fuerza 
+        D)Ninguna de las anteriores 
+¿Cual de los siguientes tipos de IA se basa en un sistema de recompensas y castigos?
+       A) Aprendizaje Supervisado
+       B) Aprendizaje No Supervisado
+       C) Aprendizaje por Refuerzo
+       D)  Machine Learning
+¿Cuál de estas inteligencias artificiales intentan replicar la inteligencia humana lo mejor posible?
+        A) Narrow AI 
+        B) Strong AI 
+        C) Super AI 
+        D)Machine Learning 
+
+¿Cuál es la entidad que toma las decisiones en el aprendizaje por refuerzo?
+        A)Entorno
+        B)Agente
+        C)Acciones
+        D)Recompensas
+
